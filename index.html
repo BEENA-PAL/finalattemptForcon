@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        background-color: rgb(241, 156, 156);
+        padding: 2em 5em;
+      }
+      h1 {
+        text-align: center;
+      }
+      p {
+        text-align: justify;
+        font-size: 2em;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+      }
+      #first {
+        background-color: #faebd7;
+      }
+      #second {
+        background-color: #544d44;
+      }
+      #third {
+        background-color: #080808;
+      }
+      #forth {
+        background-color: #aeeef5;
+      }
+      .btn {
+        border: solid #8e8080 2px;
+        height: 2rem;
+        width: 2rem;
+        display: inline-block;
+        border-radius: 2rem;
+      }
+      h3 {
+        margin-top: 2px;
+        margin-bottom: 3px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .baby{
+        margin-bottom: 0;
+      }
+      hr{
+        margin: 0;
+      }
+    </style>
+    <title>background changer</title>
+  </head>
+  <body>
+    <h3 class="paragraph">Touch below circle to see the effect</h3>
+    <div id="color-switcher">
+      <span class="btn" id="first" onclick="myfun('#faebd7')"></span>
+      <span class="btn" id="second" onclick="myfun('#544d44')"></span>
+      <span class="btn" id="third" onclick="myfun('#080808')"></span>
+      <span class="btn" id="forth" onclick="myfun('#aeeef5')"></span>
+    </div>
+    <h1 class="paragraph">A Message To My Lovely Brother</h1>
+    <img src="image/employee-recognition-management.webp" alt="" />
+    <p class="paragraph">
+      <h3 class="paragraph" class="baby">Dear Baby...❤️</h3><br><hr>
+      You know that I love you so much and it's  my love for you that is compelling me tell you to do things what is right for you at right time. <br>
+      I don't want anybody to pinpoint at you for any sort of reason.
+      I want to see you excel in your career .and i know that this is crucial time for you and for all of us.. <br>please dedicate your time and affort at right place.if this time pass by ,it will leave regret and nothing else.
+      <br>Please understand that i want better for you.. 
+      <b>sorry if i hurt you in anyway </b>
+      <i>i love you naaa...</i>
+      By the way the boy in the black coat is my you... i love you🫂🫂🤗❤️
+
+    </p>
+
+    <script>
+      function myfun(color) {
+        document.body.style.backgroundColor = color;
+        let paragraph = document.getElementsByClassName("paragraph");
+        if (color == "#080808" || color == "#544d44") {
+          for (let i of paragraph) {
+            i.style.color = "white";
+          }
+        } else {
+          for (let i of paragraph) {
+            i.style.color = "black";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
